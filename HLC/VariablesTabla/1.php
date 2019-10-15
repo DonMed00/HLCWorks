@@ -6,6 +6,10 @@ table{
     border: 1px solid black;
     font-size: 20px;
 }
+td{
+    text-align: center;
+    border: 1px solid black;
+}
 .trGris{
     background-color: grey;
 }
