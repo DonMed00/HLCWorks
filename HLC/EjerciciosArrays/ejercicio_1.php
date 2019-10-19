@@ -1,9 +1,16 @@
 <html>
 <head>
 <style type="text/css">
+table{
+  margin: auto
+}
 table,tr,td{
     border: 1px solid black;
-    font-size: 20px;
+        font-size: 20px;
+    text-align: center;i
+}
+th{
+  width: 100;
 }
   </style>
 </head>
@@ -11,27 +18,30 @@ table,tr,td{
 <?php
 include 'ejercicioPHP.php';
 foreach($arrayPersonas as $persona){
-    foreach ($persona as $clave => $valor) {
-    }
 }
-echo '<table>';
-echo '<thead>';
- echo '<tr>';
+echo '<table>', '<thead>', '<tr>';
+
     foreach ($persona as $clave => $valor) {
      echo '<th>',$clave,'</th>';
     }
+  
     echo '</tr>
       
     
     </thead>
 
    
-  <tbody>
-    <tr>
-      <td>January</td>
-      <td>$100</td>
-    </tr>
-</table>';
+  <tbody>';
+    
+    foreach($arrayPersonas as $persona){
+      echo '<tr>';
+      foreach ($persona as $clave => $valor) {
+        echo '<td>',$valor,'</td>';
+      }
+      echo '</tr>';
+    }
+    
+echo '</table>';
 
 ?> 
 
