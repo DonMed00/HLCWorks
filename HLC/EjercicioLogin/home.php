@@ -9,7 +9,7 @@
 <?php
 
 ?>
-<form action="proceso.php" method="get">
+<form action="proceso.php" method="post">
  <p>Usuario: <input type="text" name="user" /></p>
  <p>Password: <input type="password" name="password" /></p>
  <p><input type="submit" /></p>

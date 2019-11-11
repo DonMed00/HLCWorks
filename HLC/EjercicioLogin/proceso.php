@@ -4,8 +4,8 @@
 </head>
 <body>
  <?php
- $user = $_GET['user'];
- $password = $_GET['password'];
+ $user = $_POST['user'];
+ $password = $_POST['password'];
  if(checkInput($user)&&checkInput($password)){
     header ("Location: mipagina.php");
  }else{
