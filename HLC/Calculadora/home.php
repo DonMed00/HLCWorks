@@ -29,7 +29,7 @@ function validarFormulario(){
 
 }
 function comprobarInputs(){
-    if (empty($_POST['number1'])||empty($_POST['number2'])||empty($_POST['number3'])) {
+    if ($_POST['number1']==''||$_POST['number2']==''||$_POST['number3']=='') {
         echo 'Debes rellenar todos los campos';
     }else if (!is_numeric($_POST['number1'])||!is_numeric($_POST['number2'])||!is_numeric($_POST['number3'])) {
         echo 'Los campos deben ser números';
@@ -43,15 +43,19 @@ function realizarOperacion(){
     $number2=$_POST['number2'];
     $number3=$_POST['number3'];
     if($miSelect=='sumar'){
-        echo $number1+$number2+$number3;    
+        echo 'El resultado es: ', $number1+$number2+$number3;    
     }else if($miSelect=='restar'){
-        echo $number1-$number2-$number3;    
+        echo 'El resultado es: ', $number1-$number2-$number3;    
     }else if($miSelect=='multiplicar'){
-        echo $number1*$number2*$number3;    
+        echo 'El resultado es: ', $number1*$number2*$number3;    
     }else if($miSelect=='dividir'){
-        echo $number1/$number2/$number3;    
-    }  
-}
+        if($number2=='0'||$number3=='0'){
+            echo 'No se puede dividir entre 0';
+        }else{ 
+            echo 'El resultado es: ', $number1/$number2/$number3;    
+        }
+    }
+}        
 ?>
 <footer>
   <p>Created by: Adrián Mena</p>
