@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>BOLETIN EJERCICIOS 4. FORMULARIOS</title>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+<h1>BOLETIN EJERCICIOS 4. FORMULARIOS</h1>
+
+<form action="searchController_2.php" method="post">
+<div>
+ <label>First Name</label> <input type="text" name="firstname" required/>
+ <label>Surname</label> <input type="text" name="surname" />
+ <label>Age</label> <input type="text" name="age" pattern="[0-9]{1,2}" />
+ <select name="ageSelect">
+    <option value="mayor">Mayor igual</option>
+    <option value="menor">Menor igual</option>
+    <option value="igual">Igual</option>
+ </select>
+
+</div>
+<div>
+        <label><input type="checkbox" name="country" value="0">Wales</label>
+        <label><input type="checkbox" name="country" value="1">Usa</label>
+        <label><input type="checkbox" name="country" value="2">Ireland</label>
+        <label><input type="checkbox" name="country" value="3">Scotland</label>
+        <label><input type="checkbox" name="country" value="4">Australia</label>
+        <label><input type="checkbox" name="country" value="5">England</label>
+        <label><input type="checkbox" name="country" value="all" checked>All</label>            
+</div>
+
+ <p><input type="submit" /></p>
+</form>
+<footer>
+  <p>Created by: Adrian Mena</p>
+</footer>
+</body>
+</html>
