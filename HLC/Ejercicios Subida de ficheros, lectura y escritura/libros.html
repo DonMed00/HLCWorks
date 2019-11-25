@@ -1,11 +1,8 @@
 <html>
 <head>
-    <meta http-equiv="Expires" content="0">
-    <meta http-equiv="Last-Modified" content="0">
-    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-    <meta http-equiv="Pragma" content="no-cache">
 <title>EJERCICIO Subir Descargar Libros</title>
-<link rel="stylesheet" href="estilos.css"/>
+<link rel="stylesheet" href="estilos.css?v=<?php echo(rand()); ?>" />
+<script src="/js/mi_script.js?v=<?php echo(rand()); ?>"></script>
 </head>
 <body>
 <h1> INSERTA LOS DATOS DEL LIBRO</h1>
@@ -14,8 +11,8 @@
     <input type="text" maxlength="30" size="30" name="title" required>
     <br>
     Tipo:<br>
-    <input type="radio" name="type" value="ejemplar" required> Ejemplar
-    <input type="radio" name="type" value="coleccion"> Coleccion
+    <input type="radio" name="type" value="Ejemplar" required> Ejemplar
+    <input type="radio" name="type" value="Coleccion"> Coleccion
     <br><br>
     Observaciones:<br>
     <textarea name="observations" cols="40" required></textarea>
