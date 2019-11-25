@@ -7,7 +7,7 @@
  $firstname = $_POST['firstname'];
  $surname = $_POST['surname'];
  $age = $_POST['age'];
- $countries = $_POST["countries"];
+ $countries=$_POST["countries"];
  $ageSelect = $_POST['ageSelect'];
  if(checkInput($firstname) && checkInput($surname) && checkInput($age)){
     include 'ejercicioPHP_formulario.php';
@@ -40,8 +40,8 @@
                             $flag1 = true;
                         }
                 }
-                }
                 
+            }
         }
           if($clave == "firstname"){
               if($valor==$firstname){
