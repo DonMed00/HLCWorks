@@ -1,2 +1,17 @@
-Título: Stars wars<br>Tipo: ejemplarTítulo3434343</br>Tipo: colecciTítulordegerg<br>Tipo: colecciTítulo:asodaiod\nTipo: ejemplarTítulo: 334ee3e3e
-Tipo: coleccion
+Título: Harry Potter
+Tipo: Coleccion
+Observaciones: Grandes historias
+7 libros
+------------------------------------------
+Título: Peter Pan
+Tipo: Coleccion
+Observaciones: Infantil
+------------------------------------------
+Título: Batman vs Joker
+Tipo: Ejemplar
+Observaciones: Saga de Superheroes
+------------------------------------------
+Título: Mortadelo y Filemon
+Tipo: Coleccion
+Observaciones: Ninguna
+------------------------------------------

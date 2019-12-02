@@ -7,7 +7,7 @@
  $firstname = $_POST['firstname'];
  $surname = $_POST['surname'];
  $age = $_POST['age'];
- $countries = $_POST["countries"];
+ $country = $_POST['country'];
  $ageSelect = $_POST['ageSelect'];
  if(checkInput($firstname) && checkInput($surname) && checkInput($age)){
     include 'ejercicioPHP_formulario.php';
@@ -32,16 +32,15 @@
       foreach($arrayPersonas as $persona){
         foreach ($persona as $clave => $valor) {
             if($clave == "country"){
-                foreach($countries as $country){
-                    if($country=="all"){
+                if($country=="all"){
+                    $flag1 = true;
+                }else{
+                    if($valor==$country){
                         $flag1 = true;
                     }else{
-                        if($valor==$country){
-                            $flag1 = true;
-                        }
+                        $flag1= false;
                 }
-                }
-                
+            }
         }
           if($clave == "firstname"){
               if($valor==$firstname){

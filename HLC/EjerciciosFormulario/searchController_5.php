@@ -7,9 +7,9 @@
  $firstname = $_POST['firstname'];
  $surname = $_POST['surname'];
  $age = $_POST['age'];
- $countries = $_POST["countries"];
+ $countries=$_POST["countries"];
  $ageSelect = $_POST['ageSelect'];
- if(checkInput($firstname) && checkInput($surname) && checkInput($age)){
+ if(checkInput($firstname) && checkInput($surname) && checkInput($age) && checkInput($countries)){
     include 'ejercicioPHP_formulario.php';
     foreach($arrayPersonas as $persona){
     }
@@ -40,18 +40,19 @@
                             $flag1 = true;
                         }
                 }
-                }
                 
+            }
         }
+       
           if($clave == "firstname"){
-              if($valor==$firstname){
+              if(startsWith(strtolower($valor),strtolower($firstname))){
                   $flag2 = true;
               }else{
                   $flag2= false;
               }
             }
             if($clave == "surname"){
-                if($valor==$surname){
+                if(startsWith(strtolower($valor),strtolower($surname))){
                     $flag3 = true;
                 }else{
                     $flag3= false;
@@ -89,7 +90,7 @@
     echo '</table>';
     
  }else{
-    echo 'Debe rellenar el campo';
+    echo 'Debe rellenar los campos';
 
  }
  ?>
@@ -103,6 +104,12 @@ function checkInput($input) {
     }else{
         return true;
     }
+}
+
+function startsWith($haystack, $needle)
+{
+     $length = strlen($needle);
+     return (substr($haystack, 0, $length) == $needle);
 }
 
 ?>
