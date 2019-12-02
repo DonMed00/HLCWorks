@@ -18,14 +18,14 @@
 </html>
 <?php
 function checkUser() {
-    if($user != 'user'){
+    if($user != "user"){
         return false;
     }else{
         return true;
     }
 }
 function checkPassword() {
-    if($password != '1234'){
+    if($password != "1234"){
         return false;
     }else{
         return true;
