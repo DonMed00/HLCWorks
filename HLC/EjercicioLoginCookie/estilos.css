@@ -1,0 +1,14 @@
+html{
+    padding: 20vh;
+    background-color: black;
+}
+body{
+    background-color: cadetblue;
+    margin-left: 2vh;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+a{
+    color: blue;
+}
