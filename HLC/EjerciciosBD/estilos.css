@@ -1,0 +1,16 @@
+body{
+   background-color: cornsilk;
+}
+div{
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 30%;
+    background-color: coral;
+}
+h2{
+    margin-left: 35%;
+}
+P{
+    font-size: 2.2vh;
+    font-weight: bold;
+}
