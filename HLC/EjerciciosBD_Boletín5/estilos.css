@@ -1,0 +1,28 @@
+body{
+    background-color: cornsilk;
+ }
+h2{
+    text-align: center;
+}
+ p{
+     font-size: 2.2vh;
+     font-weight: bold;
+ }
+ table{
+     border: 1px solid cornsilk;
+     margin: auto;
+ }
+ td{
+    padding: 0 50px;
+ }
+ tr{
+     text-align: center;
+     
+ }
+
+ th{
+     background-color: darkcyan;
+ }
+ td{
+     background-color: darkkhaki;
+ }
